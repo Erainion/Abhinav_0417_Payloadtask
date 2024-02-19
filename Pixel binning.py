@@ -3,10 +3,10 @@ import time
 
 fp="../../Downloads/Bits_Clock_tower.png"
 image=cv2.imread(fp)
-image=cv2.resize(image,(600,600))
-cv2.imshow('Before',image)
-h,w,n=image.shape
-new=image
+new=image.copy()
+h,w,n=new.shape
+new2=cv2.resize(image,(600,600))
+cv2.imshow('Before',new2)
     
 for x in range(0,h-1,2):
     for y in range(0,w-1,2):
@@ -27,6 +27,7 @@ for x in range(0,h-1,2):
         new[x,y+1]=p.copy()
         new[x+1,y+1]=p.copy()
 
+new=cv2.resize(new,(600,600))
 cv2.imshow('After',new)
 cv2.moveWindow('After',650,0)
 
