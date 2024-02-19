@@ -1,0 +1,13 @@
+Q: 
+Access the model's ability to handle complex classfication tasks to uncover any limitations it may face in the real world scenarios
+Ans:
+Its real world problems are:-
+#Its only used in linear systems, workd best for binary classification tasks
+#If the decision boundary is highly non-linear, logistic regression might not be suitable.
+#It is sensitive to values that are extremes(they can be errors perhPs)
+#Quality and quantity of the dataset: real world data sets will have lesser quality(some values might be missing,
+extreme values like mentioned before,etc). Real dtata sets may also larger and it will get difficult to code       it(explained in the next point)
+#While I'm splitting the dataset into training and testing sets, here I am only evaluating the model's performance on a single test set. To ensure the model's generalization to unseen data, techniques like cross-validation or using multiple test sets might be necessary, especially in real-world scenarios where the data distribution might change over time. To implement this with larger data sets and with more that one sets will get difficult even to just program)
+
+
+Note to reader: In the previous question, pixel binning, I'm aware that the output is not as intended and the image just looks more blur. I'm submitting it for now, for my own benefit, I will correct the code as soon as possible.
